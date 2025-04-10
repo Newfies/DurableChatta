@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    document.addEventListener('keydown', (event) => {
+    msg.document.addEventListener('keydown', (event) => {
         if (event.key === 'Backspace') {
             if (canHideMSGs == true){
                 event.preventDefault();
