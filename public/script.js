@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Backspace' && canHideMSGs) {
             event.preventDefault();
-            msg.remove();
+            if (msg) {
+                msg.remove();
+                canHideMSGs = false;
+            }
         }
     });
 
