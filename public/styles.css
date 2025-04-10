@@ -49,3 +49,7 @@ html {
 .my-input-text::placeholder {
   color: #ccc;
 }
+
+#messages {
+  border: 1px solid green;
+}
