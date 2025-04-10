@@ -9,15 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    msg.document.addEventListener('keydown', (event) => {
-        if (event.key === 'Backspace') {
-            if (canHideMSGs == true){
-                event.preventDefault();
-
-                msg.remove();
-            }
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Backspace' && canHideMSGs) {
+            event.preventDefault();
+            msg.remove();
         }
-    });
 
     msg.addEventListener('mouseenter', function(){
         canHideMSGs = true;
