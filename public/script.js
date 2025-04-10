@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', (event) => {
         if (event.key === '~') {
             window.close();
-            window.location("https://mail.google.com/mail/u/0/");
+            window.location.href = "https://mail.google.com/mail/u/0/";
         }
     });
 
