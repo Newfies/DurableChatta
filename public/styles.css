@@ -51,6 +51,7 @@ html {
 }
 
 .messages {
-  border: 1px solid green;
+  border: 1px solid black;
+  border-radius: 6px;
   padding: 2%
 }
