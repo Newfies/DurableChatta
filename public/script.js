@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
             msg.remove();
         }
+    });
 
     msg.addEventListener('mouseenter', function(){
         canHideMSGs = true;
